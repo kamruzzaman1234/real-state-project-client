@@ -43,10 +43,10 @@ const Navbar = ()=>{
     </ul>
   </div>
   <div className="navbar-end space-x-2">
-    <Link to="" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">
+    <Link to="/login" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">
         Login
     </Link>
-    <Link to="" className="px-5 md:px-7 text-white font-bold lg:px-8 py-2 rounded-lg  bg-[#FF5A3C]">
+    <Link to="/register" className="px-5 md:px-7 text-white font-bold lg:px-8 py-2 rounded-lg  bg-[#FF5A3C]">
         Register
     </Link>
     

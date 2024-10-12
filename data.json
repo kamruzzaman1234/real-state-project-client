@@ -1,0 +1,114 @@
+
+ [
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/qCC4M3g/pexels-falling4utah-2724748.jpg",
+      "title": "Luxury Villa in Downtown",
+      "location": "Downtown, New York",
+      "description": "A luxurious villa with modern amenities and spacious design.",
+      "price": 1500000,
+      "status": "For Sale",
+      "bed": 4,
+      "baths": 3
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/CzpQT2N/pexels-pixabay-53610.jpg",
+      "title": "Modern Apartment",
+      "location": "Brooklyn, New York",
+      "description": "A sleek, modern apartment with a beautiful city view.",
+      "price": 850000,
+      "status": "For Sale",
+      "bed": 2,
+      "baths": 2
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/PMNPF1Z/pexels-expect-best-79873-323772.jpg",
+      "title": "Spacious Suburban Home",
+      "location": "Suburbs, Chicago",
+      "description": "A quiet home in the suburbs, perfect for families.",
+      "price": 1200000,
+      "status": "For Sale",
+      "bed": 5,
+      "baths": 4
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/YWzkW3D/pexels-pixabay-277667.jpg",
+      "title": "Cozy Studio Apartment",
+      "location": "Manhattan, New York",
+      "description": "A cozy studio in the heart of the city.",
+      "price": 3000,
+      "status": "For Rent",
+      "bed": 1,
+      "baths": 1
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/LPKp0Yh/pexels-pixabay-208736.jpg",
+      "title": "Country Cottage",
+      "location": "Countryside, Vermont",
+      "description": "A charming cottage with scenic countryside views.",
+      "price": 600000,
+      "status": "For Sale",
+      "bed": 3,
+      "baths": 2
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/86bxQry/pexels-frans-van-heerden-201846-1438832.jpg",
+      "title": "Beachfront Villa",
+      "location": "Malibu, California",
+      "description": "An elegant beachfront villa with direct access to the ocean.",
+      "price": 5000,
+      "status": "For Rent",
+      "bed": 4,
+      "baths": 3
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co.com/BV2hWr6/pexels-pixabay-276724.jpg",
+      "title": "Penthouse Apartment",
+      "location": "Downtown, Miami",
+      "description": "A luxury penthouse with stunning ocean views.",
+      "price": 2200000,
+      "status": "For Sale",
+      "bed": 3,
+      "baths": 3
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co.com/yS6TKLR/pexels-expect-best-79873-323780.jpg",
+      "title": "Mountain Retreat",
+      "location": "Aspen, Colorado",
+      "description": "A secluded mountain retreat with breathtaking views.",
+      "price": 4000,
+      "status": "For Rent",
+      "bed": 5,
+      "baths": 4
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co.com/SyvBjZ9/pexels-binyaminmellish-186077.jpg",
+      "title": "Downtown Loft",
+      "location": "Los Angeles, California",
+      "description": "A spacious loft in the vibrant downtown area.",
+      "price": 1200,
+      "status": "For Rent",
+      "bed": 2,
+      "baths": 1
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co.com/XLDV7TN/pexels-pixabay-259685.jpg",
+      "title": "Classic Victorian Home",
+      "location": "San Francisco, California",
+      "description": "A beautiful Victorian-style home in a prime location.",
+      "price": 1800000,
+      "status": "For Sale",
+      "bed": 4,
+      "baths": 3
+    }
+  ]
+

@@ -6,6 +6,9 @@ const Main = ()=>{
     return(
         <div>
             {/* <Navbar></Navbar> */}
+            <div className="fixed top-3 w-full">
+            <Navbar></Navbar>
+         </div>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
