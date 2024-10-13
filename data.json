@@ -1,114 +1,204 @@
 
- [
+   [
     {
       "id": 1,
-      "image": "https://i.ibb.co.com/qCC4M3g/pexels-falling4utah-2724748.jpg",
-      "title": "Luxury Villa in Downtown",
-      "location": "Downtown, New York",
-      "description": "A luxurious villa with modern amenities and spacious design.",
-      "price": 1500000,
-      "status": "For Sale",
-      "bed": 4,
-      "baths": 3
+      "image": "https://example.com/images/property1.jpg",
+      "price": "$350,000",
+      "beds": 3,
+      "baths": 2,
+      "squareFeet": 1500,
+      "location": "123 Main St, New York, NY",
+      "description": "Modern 3-bedroom apartment in the heart of New York with stunning city views."
     },
     {
       "id": 2,
-      "image": "https://i.ibb.co.com/CzpQT2N/pexels-pixabay-53610.jpg",
-      "title": "Modern Apartment",
-      "location": "Brooklyn, New York",
-      "description": "A sleek, modern apartment with a beautiful city view.",
-      "price": 850000,
-      "status": "For Sale",
-      "bed": 2,
-      "baths": 2
+      "image": "https://example.com/images/property2.jpg",
+      "price": "$450,000",
+      "beds": 4,
+      "baths": 3,
+      "squareFeet": 2200,
+      "location": "456 Oak Ave, Los Angeles, CA",
+      "description": "Spacious family home with large backyard in a quiet suburban neighborhood."
     },
     {
       "id": 3,
-      "image": "https://i.ibb.co.com/PMNPF1Z/pexels-expect-best-79873-323772.jpg",
-      "title": "Spacious Suburban Home",
-      "location": "Suburbs, Chicago",
-      "description": "A quiet home in the suburbs, perfect for families.",
-      "price": 1200000,
-      "status": "For Sale",
-      "bed": 5,
-      "baths": 4
+      "image": "https://example.com/images/property3.jpg",
+      "price": "$600,000",
+      "beds": 5,
+      "baths": 4,
+      "squareFeet": 3000,
+      "location": "789 Pine Dr, Miami, FL",
+      "description": "Luxury 5-bedroom villa with a private pool and ocean views."
     },
     {
       "id": 4,
-      "image": "https://i.ibb.co.com/YWzkW3D/pexels-pixabay-277667.jpg",
-      "title": "Cozy Studio Apartment",
-      "location": "Manhattan, New York",
-      "description": "A cozy studio in the heart of the city.",
-      "price": 3000,
-      "status": "For Rent",
-      "bed": 1,
-      "baths": 1
+      "image": "https://example.com/images/property4.jpg",
+      "price": "$320,000",
+      "beds": 2,
+      "baths": 1,
+      "squareFeet": 1200,
+      "location": "987 Elm St, Chicago, IL",
+      "description": "Charming 2-bedroom condo with modern amenities and a rooftop deck."
     },
     {
       "id": 5,
-      "image": "https://i.ibb.co.com/LPKp0Yh/pexels-pixabay-208736.jpg",
-      "title": "Country Cottage",
-      "location": "Countryside, Vermont",
-      "description": "A charming cottage with scenic countryside views.",
-      "price": 600000,
-      "status": "For Sale",
-      "bed": 3,
-      "baths": 2
+      "image": "https://example.com/images/property5.jpg",
+      "price": "$500,000",
+      "beds": 4,
+      "baths": 2.5,
+      "squareFeet": 2500,
+      "location": "654 Maple Rd, San Francisco, CA",
+      "description": "Elegant 4-bedroom home with high ceilings and beautiful hardwood floors."
     },
     {
       "id": 6,
-      "image": "https://i.ibb.co.com/86bxQry/pexels-frans-van-heerden-201846-1438832.jpg",
-      "title": "Beachfront Villa",
-      "location": "Malibu, California",
-      "description": "An elegant beachfront villa with direct access to the ocean.",
-      "price": 5000,
-      "status": "For Rent",
-      "bed": 4,
-      "baths": 3
+      "image": "https://example.com/images/property6.jpg",
+      "price": "$750,000",
+      "beds": 6,
+      "baths": 5,
+      "squareFeet": 4000,
+      "location": "432 Birch Ln, Austin, TX",
+      "description": "Expansive estate with a large garden, outdoor kitchen, and guest house."
     },
     {
       "id": 7,
-      "image": "https://i.ibb.co.com/BV2hWr6/pexels-pixabay-276724.jpg",
-      "title": "Penthouse Apartment",
-      "location": "Downtown, Miami",
-      "description": "A luxury penthouse with stunning ocean views.",
-      "price": 2200000,
-      "status": "For Sale",
-      "bed": 3,
-      "baths": 3
+      "image": "https://example.com/images/property7.jpg",
+      "price": "$280,000",
+      "beds": 2,
+      "baths": 2,
+      "squareFeet": 1100,
+      "location": "210 Cedar St, Seattle, WA",
+      "description": "Cozy 2-bedroom cottage with a fireplace and easy access to downtown."
     },
     {
       "id": 8,
-      "image": "https://i.ibb.co.com/yS6TKLR/pexels-expect-best-79873-323780.jpg",
-      "title": "Mountain Retreat",
-      "location": "Aspen, Colorado",
-      "description": "A secluded mountain retreat with breathtaking views.",
-      "price": 4000,
-      "status": "For Rent",
-      "bed": 5,
-      "baths": 4
+      "image": "https://example.com/images/property8.jpg",
+      "price": "$350,000",
+      "beds": 3,
+      "baths": 2.5,
+      "squareFeet": 1600,
+      "location": "876 Willow Ct, Denver, CO",
+      "description": "Modern townhouse with updated kitchen and mountain views."
     },
     {
       "id": 9,
-      "image": "https://i.ibb.co.com/SyvBjZ9/pexels-binyaminmellish-186077.jpg",
-      "title": "Downtown Loft",
-      "location": "Los Angeles, California",
-      "description": "A spacious loft in the vibrant downtown area.",
-      "price": 1200,
-      "status": "For Rent",
-      "bed": 2,
-      "baths": 1
+      "image": "https://example.com/images/property9.jpg",
+      "price": "$420,000",
+      "beds": 4,
+      "baths": 3,
+      "squareFeet": 2300,
+      "location": "345 Spruce St, Dallas, TX",
+      "description": "Beautiful family home with an open floor plan and large backyard."
     },
     {
       "id": 10,
-      "image": "https://i.ibb.co.com/XLDV7TN/pexels-pixabay-259685.jpg",
-      "title": "Classic Victorian Home",
-      "location": "San Francisco, California",
-      "description": "A beautiful Victorian-style home in a prime location.",
-      "price": 1800000,
-      "status": "For Sale",
-      "bed": 4,
-      "baths": 3
+      "image": "https://example.com/images/property10.jpg",
+      "price": "$550,000",
+      "beds": 5,
+      "baths": 4,
+      "squareFeet": 3100,
+      "location": "109 Walnut Ave, San Diego, CA",
+      "description": "Luxury 5-bedroom house with a swimming pool and home theater."
+    },
+    {
+      "id": 11,
+      "image": "https://example.com/images/property11.jpg",
+      "price": "$320,000",
+      "beds": 3,
+      "baths": 2,
+      "squareFeet": 1400,
+      "location": "678 Hickory Dr, Orlando, FL",
+      "description": "Bright and airy 3-bedroom home with a fenced yard and updated appliances."
+    },
+    {
+      "id": 12,
+      "image": "https://example.com/images/property12.jpg",
+      "price": "$260,000",
+      "beds": 2,
+      "baths": 1.5,
+      "squareFeet": 1000,
+      "location": "543 Poplar St, Nashville, TN",
+      "description": "Stylish 2-bedroom condo in a trendy neighborhood, perfect for young professionals."
+    },
+    {
+      "id": 13,
+      "image": "https://example.com/images/property13.jpg",
+      "price": "$480,000",
+      "beds": 4,
+      "baths": 3.5,
+      "squareFeet": 2800,
+      "location": "231 Chestnut Ln, Phoenix, AZ",
+      "description": "Gorgeous 4-bedroom home with an outdoor pool and desert landscaping."
+    },
+    {
+      "id": 14,
+      "image": "https://example.com/images/property14.jpg",
+      "price": "$390,000",
+      "beds": 3,
+      "baths": 2,
+      "squareFeet": 1700,
+      "location": "765 Magnolia St, Charlotte, NC",
+      "description": "Recently renovated 3-bedroom home with modern fixtures and a large backyard."
+    },
+    {
+      "id": 15,
+      "image": "https://example.com/images/property15.jpg",
+      "price": "$580,000",
+      "beds": 5,
+      "baths": 4.5,
+      "squareFeet": 3500,
+      "location": "892 Cypress Ct, Boston, MA",
+      "description": "Stunning 5-bedroom house with a chef's kitchen and a private garden."
+    },
+    {
+      "id": 16,
+      "image": "https://example.com/images/property16.jpg",
+      "price": "$310,000",
+      "beds": 3,
+      "baths": 2,
+      "squareFeet": 1450,
+      "location": "123 Willow St, Atlanta, GA",
+      "description": "Charming 3-bedroom bungalow with a spacious deck and outdoor fire pit."
+    },
+    {
+      "id": 17,
+      "image": "https://example.com/images/property17.jpg",
+      "price": "$270,000",
+      "beds": 2,
+      "baths": 1,
+      "squareFeet": 950,
+      "location": "456 Ash St, Portland, OR",
+      "description": "Cute 2-bedroom apartment with eco-friendly features and a great city view."
+    },
+    {
+      "id": 18,
+      "image": "https://example.com/images/property18.jpg",
+      "price": "$680,000",
+      "beds": 6,
+      "baths": 5,
+      "squareFeet": 4200,
+      "location": "789 Redwood Dr, Las Vegas, NV",
+      "description": "Large 6-bedroom mansion with a home gym, pool, and entertainment room."
+    },
+    {
+      "id": 19,
+      "image": "https://example.com/images/property19.jpg",
+      "price": "$290,000",
+      "beds": 3,
+      "baths": 2,
+      "squareFeet": 1350,
+      "location": "321 Maple Ln, Raleigh, NC",
+      "description": "Affordable 3-bedroom house in a quiet community with good schools nearby."
+    },
+    {
+      "id": 20,
+      "image": "https://example.com/images/property20.jpg",
+      "price": "$510,000",
+      "beds": 4,
+      "baths": 3.5,
+      "squareFeet": 2900,
+      "location": "654 Birch Dr, Houston, TX",
+      "description": "Spacious 4-bedroom home with a gourmet kitchen and luxurious master suite."
     }
   ]
 

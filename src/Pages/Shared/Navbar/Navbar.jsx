@@ -1,6 +1,14 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const Navbar = ()=>{
+  const {user, logOut} = useContext(AuthContext)
+  const handleLogOut = ()=>{
+    logOut()
+    .then(res=>{})
+    .then(error=> console.log(error.message))
+  }
     return(
         <div className="max-w-7xl mx-auto">
  <div className="navbar bg-white rounded-lg px-11">
@@ -43,12 +51,23 @@ const Navbar = ()=>{
     </ul>
   </div>
   <div className="navbar-end space-x-2">
-    <Link to="/login" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">
+   {
+    user? <div>
+        <select className="select select-bordered w-full max-w-xs">
+  <option disabled selected className="bg-black text-white">{user?.email}</option>
+  <option><Link to="">Profile</Link></option>
+  <option><button onClick={handleLogOut}>LogOut</button></option>
+</select>
+      
+    </div> : <div className="space-x-2">
+       <Link to="/login" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">
         Login
     </Link>
     <Link to="/register" className="px-5 md:px-7 text-white font-bold lg:px-8 py-2 rounded-lg  bg-[#FF5A3C]">
         Register
     </Link>
+    </div>
+   }
     
   </div>
 </div>

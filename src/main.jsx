@@ -13,6 +13,9 @@ import Main from './LayOut/Main';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import AuthProvider, { AuthContext } from '../Provider/AuthProvider';
+import BookingProperty from './Pages/Home/BookingProperty/BookingProperty';
+import PrivetRouter from '../PrivetRouter/PrivetRouter';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +33,11 @@ const router = createBrowserRouter([
       {
         path:'register',
         element: <Register></Register>
+      },
+      {
+        path:'bookingProperty/:id',
+        element:<PrivetRouter><BookingProperty></BookingProperty></PrivetRouter>,
+        loader: ({params})=> fetch(`http://localhost:6010/proparties/${params.id}`)
       }
     ]
 
@@ -41,7 +49,9 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
       <div className="">
             <React.StrictMode>
-  <RouterProvider router={router} />
-</React.StrictMode>
+                <AuthProvider>
+                <RouterProvider router={router} />
+                </AuthProvider>
+            </React.StrictMode>
       </div>
 )

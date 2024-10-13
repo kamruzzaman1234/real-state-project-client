@@ -6,7 +6,7 @@ const Propartes = () => {
   const [visibleProparties, setVisibleProparties] = useState(6); // Initial number of properties to display
 
   useEffect(() => {
-    fetch("data.json")
+    fetch("http://localhost:6010/proparties")
       .then((res) => res.json())
       .then((data) => {
         setProparty(data);
