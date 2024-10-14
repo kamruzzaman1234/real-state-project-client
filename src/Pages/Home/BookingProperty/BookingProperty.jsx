@@ -43,10 +43,14 @@ const BookingProperty = ()=>{
     return(
         <div className="mt-20 py-20">
             <div className="max-w-7xl mx-auto">
+        <div className="text-center my-12">
+            <h4 className="text-[18px] text-[#FF5A3C] font-semibold">Booking Now</h4>
+            <h2 className="text-[28px] text-black font-semibold">Choose Your Property</h2>
+         </div>
                 <div className="flex flex-col md:flex-col lg:flex-row gap-8">
                     <div>
                         <img src={image} alt={title}  
-                        className="lg:w-[480px] md:w-full w-full   h-[380px] rounded-lg"/>
+                        className="lg:w-[500px] md:w-full w-full   h-[380px] rounded-lg"/>
                     </div>
                     <div className="w-full">
                         <form action="" onSubmit={handleProperty}>
@@ -88,10 +92,10 @@ const BookingProperty = ()=>{
                                      className="input input-bordered"
                                      placeholder="Enter Your Phone Number"/>
                                 </div>
-                                <div className="form-control">
-                                    <label htmlFor="order">Confirm Order</label>
-                                    <input type="submit" 
-                                     className="btn btn-block bg-[#FF5A3A] text-white font-bold"/>
+                                <div className="form-control col-span-1 lg:col-span-2 md:col-span-1">
+                                    
+                                    <input type="submit" value="Booking Now"
+                                     className="btn btn-block bg-[#FF5A3A]  text-white font-bold"/>
                                 </div>
                             </div>
                         </form>

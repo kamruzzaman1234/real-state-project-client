@@ -53,11 +53,18 @@ const Navbar = ()=>{
   <div className="navbar-end space-x-2">
    {
     user? <div>
-        <select className="select select-bordered w-full max-w-xs">
-  <option disabled selected className="bg-black text-white">{user?.email}</option>
-  <option><Link to="">Profile</Link></option>
-  <option><button onClick={handleLogOut}>LogOut</button></option>
-</select>
+         <ul className="menu menu-horizontal px-1">
+      <li><a></a></li>
+      <li>
+        <details>
+          <summary>{user?.email}</summary>
+          <ul className="bg-base-100 rounded-t-none">
+            <li> <button onClick={handleLogOut}>Log Out</button> </li>
+            
+          </ul>
+        </details>
+      </li>
+    </ul>
       
     </div> : <div className="space-x-2">
        <Link to="/login" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">
