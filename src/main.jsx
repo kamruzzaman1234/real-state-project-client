@@ -16,6 +16,7 @@ import Register from './Pages/Register/Register';
 import AuthProvider, { AuthContext } from '../Provider/AuthProvider';
 import BookingProperty from './Pages/Home/BookingProperty/BookingProperty';
 import PrivetRouter from '../PrivetRouter/PrivetRouter';
+import Bookings from './Pages/Home/Bookings/Bookings';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         path:'bookingProperty/:id',
         element:<PrivetRouter><BookingProperty></BookingProperty></PrivetRouter>,
         loader: ({params})=> fetch(`http://localhost:6010/proparties/${params.id}`)
+      },
+      {
+        path:'bookings',
+        element: <PrivetRouter><Bookings></Bookings></PrivetRouter>
       }
     ]
 

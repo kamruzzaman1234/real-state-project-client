@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../../Provider/AuthProvider";
 
-const Navbar = ()=>{
+const Navbar = ({bookings})=>{
   const {user, logOut} = useContext(AuthContext)
   const handleLogOut = ()=>{
     logOut()
@@ -34,6 +34,7 @@ const Navbar = ()=>{
        <li><Link to="/">Home</Link></li>
       <li><Link to="/about">About</Link></li>
       <li><Link to="/property">Property</Link></li>
+      
       <li><Link to="/blog">Blog</Link></li>
       <li><Link to="/contact">Contact</Link></li>
       </ul>
@@ -46,25 +47,35 @@ const Navbar = ()=>{
       <li><Link to="/">Home</Link></li>
       <li><Link to="/about">About</Link></li>
       <li><Link to="/property">Property</Link></li>
+      {/* <li><Link to="/bookings" className="bg-[#FF5A3A] 
+      font-bold text-white">Bookings</Link></li> */}
       <li><Link to="/blog">Blog</Link></li>
       <li><Link to="/contact">Contact</Link></li>
     </ul>
   </div>
   <div className="navbar-end space-x-2">
    {
-    user? <div>
+    user? <div className="relative">
          <ul className="menu menu-horizontal px-1">
       <li><a></a></li>
-      <li>
-        <details>
+      <li className="">
+        <details className="border-2 border-orange-300 rounded-lg ">
           <summary>{user?.email}</summary>
+          
           <ul className="bg-base-100 rounded-t-none">
+          <li><Link to="/bookings" className="bg-[#FF5A3A]
+          text-white font-bold">Bookings</Link></li>
             <li> <button onClick={handleLogOut}>Log Out</button> </li>
+           
             
           </ul>
         </details>
       </li>
     </ul>
+    <div className="w-[30px] h-[30px] flex items-center justify-center
+     bg-[#FF5A3A] rounded-full absolute text-white font-bold right-2 -top-3">
+          {bookings?.length || 1}
+          </div>
       
     </div> : <div className="space-x-2">
        <Link to="/login" className="px-5 md:px-7 lg:px-8 py-2 text-white font-bold rounded-lg  bg-[#FF5A3C]">

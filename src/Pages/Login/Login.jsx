@@ -53,9 +53,7 @@ const Login = () => {
                 navigate(location?.state ? location?.state: '/' )
                 toast("Login Successfully")
             })
-            .catch(error => {
-                console.error(error.message);
-            });
+            .catch(error => console.log(error.message));
     };
 
     return (

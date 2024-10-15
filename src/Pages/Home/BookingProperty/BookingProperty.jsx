@@ -4,7 +4,7 @@ import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const BookingProperty = ()=>{
     const propertyData = useLoaderData()
-    const {title, price, image, _id} = propertyData
+    const {_id,title, price, image, location} = propertyData
     const {user} = useContext(AuthContext)
 
     const handleProperty = (e)=>{
@@ -17,7 +17,7 @@ const BookingProperty = ()=>{
         const date = form.date.value 
         const phone = form.phone.value 
         const allValue = {
-           _id, image, name, email, price, address, date, phone
+             image, name, email, price,title, address, date, phone, location
         }
         
         console.log(allValue)
@@ -34,11 +34,14 @@ const BookingProperty = ()=>{
         console.log(data)
         if(data.insertedId){
             alert("Booking Successfully")
+            setBookings([...bookings, allValue])
         }
     })
    
       
     }
+
+    
 
     return(
         <div className="mt-20 py-20">
