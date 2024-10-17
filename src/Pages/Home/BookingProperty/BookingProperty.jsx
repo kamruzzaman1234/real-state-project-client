@@ -34,7 +34,7 @@ const BookingProperty = ()=>{
         console.log(data)
         if(data.insertedId){
             alert("Booking Successfully")
-            setBookings([...bookings, allValue])
+            // setBookings([...bookings, allValue])
         }
     })
    

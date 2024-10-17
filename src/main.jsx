@@ -17,6 +17,7 @@ import AuthProvider, { AuthContext } from '../Provider/AuthProvider';
 import BookingProperty from './Pages/Home/BookingProperty/BookingProperty';
 import PrivetRouter from '../PrivetRouter/PrivetRouter';
 import Bookings from './Pages/Home/Bookings/Bookings';
+import About from './Pages/About/About';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path:'bookings',
         element: <PrivetRouter><Bookings></Bookings></PrivetRouter>
+      },
+      {
+        path:"about",
+        element: <About></About>
       }
     ]
 

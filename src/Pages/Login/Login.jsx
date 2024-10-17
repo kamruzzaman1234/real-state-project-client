@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -48,10 +49,20 @@ const Login = () => {
        
         signIn(email, password)
             .then(result => {
-                const user = result.user;
-                console.log("Successfull login",user);
-                navigate(location?.state ? location?.state: '/' )
-                toast("Login Successfully")
+                const logInUser = result.user;
+                console.log("Successfull login",logInUser);
+                
+                const user = {email}
+
+                axios.post('http://localhost:6010/jwt', user, {withCredentials: true})
+                .then(res=> {
+                    console.log(res.data)
+                    if(res.data.success){
+                        toast("Login Successfully")
+                        navigate(location?.state ? location?.state: '/' )
+                
+                    }
+                })
             })
             .catch(error => console.log(error.message));
     };

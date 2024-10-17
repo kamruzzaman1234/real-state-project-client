@@ -1,17 +1,26 @@
 import { useContext, useState, useEffect } from "react"
 import { AuthContext } from "../../../../Provider/AuthProvider"
 import BookingRow from "./BookingRow"
+import axios from "axios"
 
 const Bookings = ()=>{
     const [bookings, setBookings] = useState([])
     const {user} = useContext(AuthContext)
     const url = `http://localhost:6010/bookings?email=${user.email}`
     useEffect(()=>{
-        fetch(url)
-        .then(res=> res.json())
-        .then(data=>{
-            setBookings(data)
-        })
+
+
+      axios.get(url, {withCredentials: true})
+      .then(res => {
+        console.log(res.data)
+        setBookings(res.data)})
+      .catch(error => console.error('Error fetching bookings:', error));
+
+        // fetch(url)
+        // .then(res=> res.json())
+        // .then(data=>{
+        //     setBookings(data)
+        // })
     },[url])
 
     const handleDelete = (id)=>{
@@ -29,6 +38,7 @@ const Bookings = ()=>{
               const reamining = bookings.filter(booking=> booking._id !== id)
               setBookings(reamining)
           }
+          
       })
      }
   }
@@ -77,6 +87,7 @@ const Bookings = ()=>{
         <th>Location</th>
         <th>Price</th>
         <th>Date</th>
+        <th>Email</th>
       </tr>
     </thead>
     <tbody>

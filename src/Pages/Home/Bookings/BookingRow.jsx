@@ -1,6 +1,9 @@
-const BookingRow = ({booking, handleDelete, handleConfirm})=>{
+import { useContext } from "react";
+import { AuthContext } from "../../../../Provider/AuthProvider";
 
-    const {_id, image, title, date, price, location, status} = booking
+const BookingRow = ({booking, handleDelete, handleConfirm})=>{
+    const {user} = useContext(AuthContext)
+    const {_id, image, title, date, price, location, status, email} = booking
     return(
         
             <tr>
@@ -45,6 +48,7 @@ const BookingRow = ({booking, handleDelete, handleConfirm})=>{
         <td>${price}</td>
        
         <th>{date}</th>
+        <th>{user?.email}</th>
         <th>
          {
           status === "confirm" ? <button className="btn bg-orange-600
