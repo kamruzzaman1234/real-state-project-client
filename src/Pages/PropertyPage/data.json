@@ -1,0 +1,383 @@
+[
+    {
+      "_id": "671226d61224519ef75216e6",
+      "name": "Luxury Apartment",
+      "location": "Dhaka, Uttara",
+      "price": 12000000,
+      "description": "A beautiful luxury apartment with all modern amenities.",
+      "amenities": [
+        "Gym",
+        "Swimming Pool",
+        "24/7 Security"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/RTvTFqJ/pexels-binyaminmellish-186077-1.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216e7",
+      "name": "Cozy Home",
+      "location": "Chittagong, Agrabad",
+      "price": 8500000,
+      "description": "A cozy home perfect for families.",
+      "amenities": [
+        "Parking",
+        "Garden"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "image": "https://i.ibb.co.com/ZL9yxPc/pexels-binyaminmellish-1396122.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216e8",
+      "name": "Office Space",
+      "location": "Dhaka, Gulshan",
+      "price": 30000,
+      "description": "An ideal office space in a prime location.",
+      "image": "https://i.ibb.co.com/XWtrHsh/pexels-scottwebb-1029599.jpg",
+        "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3
+    },
+    {
+      "_id": "671226d61224519ef75216e9",
+      "name": "Family Villa",
+      "location": "Sylhet",
+      "price": 15000000,
+      "description": "A spacious villa with a large garden.",
+        
+      "image": "https://i.ibb.co.com/g9HTH9L/pexels-itsterrymag-2635038.jpg",
+      "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3
+    },
+    {
+      "_id": "671226d61224519ef75216ea",
+      "name": "Studio Apartment",
+      "location": "Dhaka, Banani",
+      "price": 4500000,
+      "description": "Modern studio apartment for young professionals.",
+      "image": "https://i.ibb.co.com/f2P7W17/pexels-falling4utah-2724749-1.jpg",
+      "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3
+    },
+    {
+      "_id": "671226d61224519ef75216eb",
+      "name": "Commercial Space",
+      "location": "Khulna",
+      "price": 2000000,
+      "description": "Perfect for retail businesses.",
+     
+     "image": "https://i.ibb.co.com/nBbXRTr/pexels-pixabay-209296.jpg",
+     "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3
+    },
+    {
+      "_id": "671226d61224519ef75216ec",
+      "name": "Luxury Condo",
+      "location": "Narayanganj",
+      "price": 9800000,
+      "description": "Luxury condo with river views.",
+      "image": "https://i.ibb.co.com/BykQFKM/pexels-expect-best-79873-323775.jpg",
+      "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3
+    },
+    {
+      "_id": "671226d61224519ef75216ed",
+      "name": "Duplex Home",
+      "location": "Rajshahi",
+      "price": 11000000,
+      "description": "Stylish duplex home for sale.",
+      "amenities": [
+        "Garden",
+        "Terrace"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "image": "https://i.ibb.co.com/HryQZLM/pexels-pixabay-210617.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216ee",
+      "name": "Penthouse",
+      "location": "Dhaka, Motijheel",
+      "price": 16000000,
+      "description": "Luxurious penthouse in the heart of the city.",
+      "amenities": [
+        "Private Roof",
+        "Jacuzzi"
+      ],
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "image": "https://i.ibb.co.com/vcZbcV9/pexels-pixabay-279607.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216ef",
+      "name": "Country House",
+      "location": "Cox's Bazar",
+      "price": 7500000,
+      "description": "Beautiful country house near the beach.",
+      "amenities": [
+        "Beach Access",
+        "Garden"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/Z15VXg7/pexels-fotoaibe-1643383.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f0",
+      "name": "Modern Flat",
+      "location": "Dhaka, Dhanmondi",
+      "price": 5500000,
+      "description": "Modern flat with contemporary design.",
+      "amenities": [
+        "Gym",
+        "Lift"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/19H2yL1/pexels-pixabay-276554.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f1",
+      "name": "Rooftop Apartment",
+      "location": "Chittagong",
+      "price": 6000000,
+      "description": "Unique rooftop apartment with stunning views.",
+      "amenities": [
+        "Balcony",
+        "Garden"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/PwPFLB4/pexels-trygve-finkelsen-1500241-2893177.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f2",
+      "name": "Business Center",
+      "location": "Dhaka",
+      "price": 50000,
+      "description": "Fully equipped business center for rent.",
+      "amenities": [
+        "High Speed Internet",
+        "Conference Room"
+      ],
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/p12g8hx/pexels-pixabay-280232.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f3",
+      "name": "Affordable Housing",
+      "location": "Sylhet",
+      "price": 4000000,
+      "description": "Affordable housing option for families.",
+      "amenities": [
+        "Parking",
+        "Community Center"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/pKTPkPr/pexels-pixabay-276593.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f4",
+      "name": "Luxury Mansion",
+      "location": "Dhaka, Bashundhara",
+      "price": 25000000,
+      "description": "Grand mansion with premium amenities.",
+      "amenities": [
+        "Pool",
+        "Home Theater"
+      ],
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "image": "https://i.ibb.co.com/sqdrtYM/pexels-jvdm-1457842.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f5",
+      "name": "Eco-Friendly Home",
+      "location": "Bogura",
+      "price": 9000000,
+      "description": "Sustainable living with eco-friendly features.",
+      "amenities": [
+        "Solar Panels",
+        "Rainwater Harvesting"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/hFHZVQr/pexels-asphotograpy-565324.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f6",
+      "name": "Shared Office Space",
+      "location": "Dhaka, Shyamoli",
+      "price": 20000,
+      "description": "Affordable shared office space.",
+      "amenities": [
+        "WiFi",
+        "Networking Events"
+      ],
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/pfmzzF6/pexels-pixabay-534228.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f7",
+      "name": "Townhouse",
+      "location": "Barisal",
+      "price": 8500000,
+      "description": "Beautiful townhouse with modern design.",
+      "amenities": [
+        "Garage",
+        "Backyard"
+      ],
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "image": "https://i.ibb.co.com/mhZbQGn/pexels-fotoaibe-1571468.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f8",
+      "name": "Luxury Retreat",
+      "location": "Cox's Bazar",
+      "price": 18000000,
+      "description": "Exclusive retreat with beachfront access.",
+      "amenities": [
+        "Spa",
+        "Private Beach"
+      ],
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "image": "https://i.ibb.co.com/tcGcCGm/pexels-pixabay-280216.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216f9",
+      "name": "Modern Loft",
+      "location": "Dhaka, Lalmatia",
+      "price": 6500000,
+      "description": "Stylish loft apartment with open space.",
+      "amenities": [
+        "Gym",
+        "Parking"
+      ],
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/5TtfwhN/pexels-kelly-1179532-2510067.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216fa",
+      "name": "Fishing Cabin",
+      "location": "Rangamati",
+      "price": 3000000,
+      "description": "Charming fishing cabin by the lake.",
+      "amenities": [
+        "Fishing Access",
+        "Nature Trails"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/MG4zw1R/pexels-pixabay-259646.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216fb",
+      "name": "Urban Apartment",
+      "location": "Dhaka, Farmgate",
+      "price": 7200000,
+      "description": "Modern urban apartment in a vibrant area.",
+      "amenities": [
+        "Elevator",
+        "Security"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/bHF5BKd/pexels-jvdm-1543447.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216fc",
+      "name": "Luxury Villa",
+      "location": "Dhaka, Niketan",
+      "price": 22000000,
+      "description": "Opulent villa with lush surroundings.",
+      "amenities": [
+        "Tennis Court",
+        "Swimming Pool"
+      ],
+      "bedrooms": 6,
+      "bathrooms": 5,
+      "image": "https://i.ibb.co.com/ZTFhHqC/pexels-pixabay-280239.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216fd",
+      "name": "Compact Apartment",
+      "location": "Dhaka, Mirpur",
+      "price": 4000000,
+      "description": "Compact apartment for a small family.",
+      "amenities": [
+        "Parking",
+        "Security"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/THxBzXT/pexels-curtis-adams-1694007-3555615.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216fe",
+      "name": "Rustic Cottage",
+      "location": "Bandarban",
+      "price": 3200000,
+      "description": "Rustic cottage with a mountain view.",
+      "amenities": [
+        "Fireplace",
+        "Deck"
+      ],
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/nmMR54H/pexels-pixabay-279719.jpg"
+    },
+    {
+      "_id": "671226d61224519ef75216ff",
+      "name": "Urban Studio",
+      "location": "Dhaka, Mohakhali",
+      "price": 4500000,
+      "description": "Urban studio with sleek design.",
+      "amenities": [
+        "WiFi",
+        "Gym"
+      ],
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "image": "https://i.ibb.co.com/KwNhXJW/pexels-madelynemery-816198.jpg"
+    },
+    {
+      "_id": "671226d61224519ef7521700",
+      "name": "Executive Office",
+      "location": "Dhaka, Banani",
+      "price": 40000,
+      "description": "Premium executive office space for rent.",
+      "amenities": [
+        "Conference Room",
+        "WiFi"
+      ],
+      "bedrooms": 0,
+      "bathrooms": 2,
+      "image": "https://i.ibb.co.com/cT8vf7Y/pexels-pixabay-208732.jpg"
+    }
+  ]

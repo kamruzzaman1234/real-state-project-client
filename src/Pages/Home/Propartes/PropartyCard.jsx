@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const PropartyCard = ({ proparty }) => {
-  const { _id, image, title, price, location, bed, bath, square_ft } = proparty;
+  const { _id, image, name, price, location, bedrooms, bathrooms, square_ft } = proparty;
   
 
   // Function to handle the image click and cycle through the images
@@ -14,18 +14,20 @@ const PropartyCard = ({ proparty }) => {
       <div className="proparty-image-container">
         <img
           src={image}
-          alt={title}
+          alt={name}
           className="w-full h-[200px] object-cover cursor-pointer"
         />
       </div>
       <div className="proparty-details mt-4">
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-xl font-semibold">{name}</h3>
         <p className="text-gray-500">{location}</p>
         <p className="text-lg font-bold">$ {price}</p>
         <div className="flex space-x-4">
-          <p>🛏️ {bed} Beds</p>
-          <p>🛁 {bath} Baths</p>
-          <p>📐 {square_ft} Sq Ft</p>
+          <p>🛏️ {bedrooms} Beds</p>
+          <p>🛁 {bathrooms} Baths</p>
+         <div>
+          
+         </div>
          
         </div>
         <div className="flex justify-end">
