@@ -19,6 +19,7 @@ import PrivetRouter from '../PrivetRouter/PrivetRouter';
 import Bookings from './Pages/Home/Bookings/Bookings';
 import About from './Pages/About/About';
 import PropertyArea from './Pages/PropertyPage/PropertyArea';
+import BlogPage from './Pages/BlogPage/BlogPage';
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path:"property",
         element: <PropertyArea></PropertyArea>
+      },
+      {
+        path:"blog",
+        element: <BlogPage></BlogPage>
       }
     ]
 

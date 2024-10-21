@@ -4,20 +4,22 @@ import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const BookingProperty = ()=>{
     const propertyData = useLoaderData()
-    const {_id,title, price, image, location} = propertyData
+    const {name, price, image, location} = propertyData
+    console.log("Your property data is", propertyData)
     const {user} = useContext(AuthContext)
+    console.log("Your user is ", user)
 
     const handleProperty = (e)=>{
         e.preventDefault()
         const form = e.target 
-        const name = form.name.value
+        const title = form.title.value
         const email = user?.email
         const price = form.price.value
         const address = form.address.value 
         const date = form.date.value 
         const phone = form.phone.value 
         const allValue = {
-             image, name, email, price,title, address, date, phone, location
+             image, title, email, price, address, date, phone, location
         }
         
         console.log(allValue)
@@ -34,6 +36,7 @@ const BookingProperty = ()=>{
         console.log(data)
         if(data.insertedId){
             alert("Booking Successfully")
+            form.reset()
             // setBookings([...bookings, allValue])
         }
     })
@@ -52,7 +55,7 @@ const BookingProperty = ()=>{
          </div>
                 <div className="flex flex-col md:flex-col lg:flex-row gap-8">
                     <div>
-                        <img src={image} alt={title}  
+                        <img src={image} alt={name}  
                         className="lg:w-[500px] md:w-full w-full   h-[380px] rounded-lg"/>
                     </div>
                     <div className="w-full">

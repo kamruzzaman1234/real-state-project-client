@@ -7,7 +7,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const PropertyCard = ({ properties }) => {
   // Destructure all necessary properties from the 'properties' object
-  const { _id,name, images = [], image, bedrooms, bathrooms, location, price, description, latitude = 0, longitude = 0 } = properties;
+  const { _id,title, images = [], image, bedrooms, bathrooms, location, price, description, latitude = 0, longitude = 0 } = properties;
   
   const [isFavorited, setIsFavorited] = useState(false);
   const toggleFavorite = () => setIsFavorited(!isFavorited);
@@ -42,7 +42,7 @@ const PropertyCard = ({ properties }) => {
       </Carousel>
 
       <div className="p-4">
-        <h2 className="text-xl font-bold mb-2">{name}</h2>
+        <h2 className="text-xl font-bold mb-2">{title}</h2>
         <p className="text-gray-600 mb-4">{location}</p>
         <p className="text-[#FF5A3A] font-bold text-lg mb-4">${price}</p>
         <div className="flex space-x-4">

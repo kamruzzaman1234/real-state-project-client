@@ -6,7 +6,7 @@ const BookingRow = ({booking, handleDelete, handleConfirm})=>{
     const {_id, image, title, date, price, location, status, email} = booking
     return(
         
-            <tr>
+            <tr className="bg-slate-200">
         <th>
         <button onClick={()=> handleDelete(_id)}
          className="btn btn-circle btn-outline">

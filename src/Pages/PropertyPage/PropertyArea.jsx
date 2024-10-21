@@ -8,7 +8,7 @@ const PropertyArea = () => {
   const [visibleProperties, setVisibleProperties] = useState(8);
 
   useEffect(() => {
-    fetch('http://localhost:6010/allProperty')
+    fetch('http://localhost:6010/proparties')
       .then(res => res.json())
       .then(data => {
         setProperty(data);
@@ -46,7 +46,7 @@ const PropertyArea = () => {
               filteredProperties.slice(0, visibleProperties).map(properties => (
                 <PropertyCard
                   key={properties._id}
-                  properties={properties}
+                  properties={properties}   
                 />
               ))
             }

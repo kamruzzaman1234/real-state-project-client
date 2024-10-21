@@ -75,7 +75,7 @@ const Bookings = ()=>{
             <div className="overflow-x-auto">
   <table className="table">
     {/* head */}
-    <thead className="bg-slate-300">
+    <thead className="bg-slate-300 ">
       <tr>
         <th>
           <label>
@@ -88,6 +88,7 @@ const Bookings = ()=>{
         <th>Price</th>
         <th>Date</th>
         <th>Email</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>

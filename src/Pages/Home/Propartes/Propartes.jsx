@@ -27,8 +27,8 @@ const Propartes = () => {
       </div>
       <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-4 lg:grid-cols-3">
         {proparty.slice(0, visibleProparties).map((proparty) => (
-          <PropartyCard key={proparty.id} proparty={proparty} />
-        ))}
+          <PropartyCard key={proparty._id} proparty={proparty} />
+        ))}   
       </div>
       {visibleProparties < proparty.length && (
         <div className="text-center mt-8">
