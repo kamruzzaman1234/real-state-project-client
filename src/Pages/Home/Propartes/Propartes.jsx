@@ -30,7 +30,7 @@ const Propartes = () => {
           <PropartyCard key={proparty._id} proparty={proparty} />
         ))}   
       </div>
-      {visibleProparties < proparty.length && (
+      {/* {visibleProparties < proparty.length && (
         <div className="text-center mt-8">
           <button
             onClick={loadMore}
@@ -39,7 +39,7 @@ const Propartes = () => {
             Load More
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 };

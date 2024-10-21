@@ -17,6 +17,22 @@ const BlogPage = () => {
       date: "October 18, 2024",
       author: "Jane Smith",
       image: "https://i.ibb.co.com/h8QnfCm/pexels-jakubzerdzicki-17797763.jpg",
+      category: "Selling",
+    },
+    {
+      title: "Tips for First-Time Homebuyers",
+      description: "Everything you need to know before buying your first home...",
+      date: "October 18, 2024",
+      author: "Jane Smith",
+      image: "https://i.ibb.co.com/gdqLfdg/pexels-katetrysh-10619954.jpg",
+      category: "Buying",
+    },
+    {
+      title: "Tips for First-Time Homebuyers",
+      description: "Everything you need to know before buying your first home...",
+      date: "October 18, 2024",
+      author: "Jane Smith",
+      image: "https://i.ibb.co.com/9Gc2LmR/pexels-jakubzerdzicki-17662844.jpg",
       category: "Buying",
     },
     // Add more blog posts as needed
@@ -38,7 +54,7 @@ const BlogPage = () => {
   };
 
   return (
-    <div className="mt-10 py-20">
+    <div className="mt-10 py-20 bg-slate-200">
       <div className="max-w-7xl mx-auto">
 
         {/* Featured Posts Section */}

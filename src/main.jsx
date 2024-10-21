@@ -20,6 +20,7 @@ import Bookings from './Pages/Home/Bookings/Bookings';
 import About from './Pages/About/About';
 import PropertyArea from './Pages/PropertyPage/PropertyArea';
 import BlogPage from './Pages/BlogPage/BlogPage';
+import ContactPage from './Pages/ContactPage/ContactPage'
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path:"blog",
         element: <BlogPage></BlogPage>
+      },
+      {
+        path:'contact',
+        element: <ContactPage></ContactPage>
       }
     ]
 
