@@ -44,7 +44,7 @@ const Register = () => {
             .then(result => {
                 const user = result.user;
                 if(user.insertedId)
-                console.log(user);
+                // console.log(user);
                 toast("Register Successfully")
                 form.reset();
             })

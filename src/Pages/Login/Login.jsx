@@ -43,20 +43,20 @@ const Login = () => {
 
         
         if (rememberMe) {
-            console.log("User wants to be remembered.");
+            // console.log("User wants to be remembered.");
         }
 
        
         signIn(email, password)
             .then(result => {
                 const logInUser = result.user;
-                console.log("Successfull login",logInUser);
+                // console.log("Successfull login",logInUser);
                 
                 const user = {email}
 
-                axios.post('https://real-state-project-server-2.onrender.com/jwt', user, {withCredentials: true})
+                axios.post('https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/jwt', user, {withCredentials: true})
                 .then(res=> {
-                    console.log(res.data)
+                    // console.log(res.data)
                     if(res.data.success){
                         toast("Login Successfully")
                         navigate(location?.state ? location?.state: '/' )

@@ -36,7 +36,7 @@ const AuthProvider = ({ children }) => {
                 
                 axios.post('https://real-state-project-server.onrender.com/jwt', logInEmailUser, {withCredential: true})
                 .then(res=> {
-                    console.log(res.data)
+                    // console.log(res.data)
                 })
                 
                 
@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
                 axios.post('https://real-state-project-server.onrender.com/logout',
              logInEmailUser, {withCredentials: true})
              .then(res=>{
-                console.log(res.data)
+                // console.log(res.data)
              })
             }
            

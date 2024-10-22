@@ -5,9 +5,9 @@ import { AuthContext } from "../../../../Provider/AuthProvider";
 const BookingProperty = ()=>{
     const propertyData = useLoaderData()
     const {name, price, image, location} = propertyData
-    console.log("Your property data is", propertyData)
+    // console.log("Your property data is", propertyData)
     const {user} = useContext(AuthContext)
-    console.log("Your user is ", user)
+    // console.log("Your user is ", user)
 
     const handleProperty = (e)=>{
         e.preventDefault()
@@ -22,9 +22,9 @@ const BookingProperty = ()=>{
              image, title, email, price, address, date, phone, location
         }
         
-        console.log(allValue)
+        // console.log(allValue)
         
-    fetch('https://real-state-project-server-2.onrender.com/bookings', {
+    fetch('https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings', {
         method: "POST",
         headers: {
             'content-type': 'application/json',
@@ -33,7 +33,7 @@ const BookingProperty = ()=>{
     })
     .then(res=> res.json())
     .then(data=>{
-        console.log(data)
+        // console.log(data)
         if(data.insertedId){
             alert("Booking Successfully")
             form.reset()

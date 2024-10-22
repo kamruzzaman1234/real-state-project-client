@@ -1,13 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
-const PropartyCard = ({ proparty }) => {
-  const { _id, image, title, price, location, bedrooms, bathrooms, amenities, square_ft } = proparty;
-  
+const PropartyCard = ({ property }) => {
 
-  // Function to handle the image click and cycle through the images
-  
+  const { _id, image, title, price, location, bedrooms, bathrooms, amenities } = property;
 
   return (
     <div className="proparty-card border p-4 shadow-md rounded-lg">
@@ -26,23 +22,26 @@ const PropartyCard = ({ proparty }) => {
           <p>🛏️ {bedrooms} Beds</p>
           <p>🛁 {bathrooms} Baths</p>
         </div>
+        
         <div className="mt-3">
-          <h3 className="font-semibold ">Amenities</h3>
-         {proparty.amenities && proparty.amenities.length > 0 ? (
-  <ul className="flex gap-2">
-    {proparty.amenities.map((amenity, index) => (
-      <li key={index}>{amenity}</li>
-    ))}
-  </ul>
-) : (
-  <p>No amenities available</p>
-)}
-         </div>
+          <h3 className="font-semibold">Amenities</h3>
+      
+          {amenities && amenities.length > 0 ? (
+            <ul className="flex gap-2">
+              {amenities.map((amenity, index) => (
+                <li key={index}>{amenity}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>No amenities available</p>
+          )}
+        </div>
+
+       
         <div className="flex justify-end">
-            <Link to={`/bookingProperty/${_id}`} className="">
-                <FaArrowAltCircleRight className="text-[22px]
-                 font-bold text-[#FF5A3A]"></FaArrowAltCircleRight>
-            </Link>
+          <Link to={`/bookingProperty/${_id}`} className="">
+            <FaArrowAltCircleRight className="text-[22px] font-bold text-[#FF5A3A]" />
+          </Link>
         </div>
       </div>
     </div>

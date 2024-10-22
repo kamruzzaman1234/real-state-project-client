@@ -7,14 +7,14 @@ const Bookings = ()=>{
     const [bookings, setBookings] = useState([])
     const {user} = useContext(AuthContext)
     
-    const url = `https://real-state-project-server-2.onrender.com/bookings?email=${user.email}`
+    const url = `https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings?email=${user.email}`
 
     useEffect(()=>{
 
 
       axios.get(url, {withCredentials: true})
       .then(res => {
-        console.log(res.data)
+        // console.log(res.data)
         setBookings(res.data)})
       .catch(error => console.error('Error fetching bookings:', error));
 
@@ -28,13 +28,13 @@ const Bookings = ()=>{
     const handleDelete = (id)=>{
       const processed = confirm("Are You Sure you want to Delete")
      if(processed){
-      fetch(`https://real-state-project-server-2.onrender.com/bookings/${id}`, {
+      fetch(`https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings/${id}`, {
           method:"DELETE",
         
       })
       .then(res=> res.json())
       .then(data=>{
-          console.log(data)
+          // console.log(data)
           if(data.deletedCount > 0){
               alert("Deleted SuccessFull")
               const reamining = bookings.filter(booking=> booking._id !== id)
@@ -46,7 +46,7 @@ const Bookings = ()=>{
   }
 
     const handleConfirm = (id)=>{
-      fetch(`https://real-state-project-server-2.onrender.com/bookings/${id}`,{
+      fetch(`https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings/${id}`,{
         method:"PATCH",
         headers: {
           'content-type':'application/json'
@@ -55,13 +55,13 @@ const Bookings = ()=>{
       })
       .then(res=> res.json())
       .then(data=> {
-        console.log(data)
+        // console.log(data)
         if(data.modifiedCount > 0){
           const remining = bookings.filter(booking=> booking._id !== id)
           const updated = bookings.find(booking=> booking._id === id)
           updated.status = "confirm"
           const newBooking = [updated, ...remining]
-          console.log(newBooking)
+          // console.log(newBooking)
           setBookings(newBooking)
         }
       })

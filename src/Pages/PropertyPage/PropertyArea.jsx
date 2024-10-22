@@ -3,21 +3,21 @@ import PropertyCard from "./PropertyCard";
 import Filters from "./Filters";
 
 const PropertyArea = () => {
-  const [property, setProperty] = useState([]);
+  const [proparties, setProparties] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [visibleProperties, setVisibleProperties] = useState(8);
 
   useEffect(() => {
-    fetch('https://real-state-project-server-2.onrender.com/proparties')
+    fetch('https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/proparties')
       .then(res => res.json())
       .then(data => {
-        setProperty(data);
+        setProparties(data);
         setFilteredProperties(data); // Initially show all properties
       });
   }, []);
 
   const applyFilters = (filters) => {
-    const filtered = property.filter(prop => {
+    const filtered = proparties.filter(prop => {
       const matchesPrice = prop.price <= filters.maxPrice;
       const matchesLocation = prop.location.toLowerCase().includes(filters.location.toLowerCase());
       const matchesType = prop.type === filters.type || filters.type === 'all';

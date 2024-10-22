@@ -2,20 +2,33 @@ import { useEffect, useState } from "react";
 import PropartyCard from "./PropartyCard";
 
 const Propartes = () => {
-  const [proparty, setProparty] = useState([]);
-  const [visibleProparties, setVisibleProparties] = useState(6); // Initial number of properties to display
+ 
+  const [proparties, setProparties] = useState([]);
+  const [visibleProparties, setVisibleProparties] = useState(6);
+
 
   useEffect(() => {
-    fetch("https://real-state-project-server-2.onrender.com/proparties")                    
-      .then((res) => res.json())
+    fetch("https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/proparties")
+      .then((res) => {
+        
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json(); 
+      })
       .then((data) => {
-        setProparty(data);
-        console.log("Proparties Data is", data);
+        setProparties(data); 
+        console.log("Fetched Data:", data); 
+      })
+      .catch((error) => {
+        console.error('There was a problem with the fetch operation:', error); 
       });
   }, []);
 
-  // Function to load more properties
   
+  const loadMore = () => {
+    setVisibleProparties((prevVisible) => prevVisible + 6);
+  };
 
   return (
     <div className="my-20">
@@ -23,12 +36,16 @@ const Propartes = () => {
         <h4 className="text-[18px] text-[#FF5A3C] font-semibold">Our Properties</h4>
         <h2 className="text-[28px] text-black font-semibold">Our Featured Properties</h2>
       </div>
+      
+   
       <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-4 lg:grid-cols-3">
-        {proparty.slice(0, visibleProparties).map((proparty) => (
-          <PropartyCard key={proparty._id} proparty={proparty} />
-        ))}   
+        {proparties.slice(0, visibleProparties).map((property) => (
+          <PropartyCard key={property._id} property={property} />
+        ))}
       </div>
-      {/* {visibleProparties < proparty.length && (
+      
+      
+      {visibleProparties < proparties.length && (
         <div className="text-center mt-8">
           <button
             onClick={loadMore}
@@ -37,7 +54,7 @@ const Propartes = () => {
             Load More
           </button>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
