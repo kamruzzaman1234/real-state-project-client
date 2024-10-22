@@ -7,7 +7,7 @@ const Bookings = ()=>{
     const [bookings, setBookings] = useState([])
     const {user} = useContext(AuthContext)
     
-    const url = `https://real-state-project-server.onrender.com/bookings?email=${user.email}`
+    const url = `https://real-state-project-server-2.onrender.com/bookings?email=${user.email}`
 
     useEffect(()=>{
 
@@ -28,7 +28,7 @@ const Bookings = ()=>{
     const handleDelete = (id)=>{
       const processed = confirm("Are You Sure you want to Delete")
      if(processed){
-      fetch(`https://real-state-project-server.onrender.com/bookings/${id}`, {
+      fetch(`https://real-state-project-server-2.onrender.com/bookings/${id}`, {
           method:"DELETE",
         
       })
@@ -46,7 +46,7 @@ const Bookings = ()=>{
   }
 
     const handleConfirm = (id)=>{
-      fetch(`https://real-state-project-server.onrender.com/bookings/${id}`,{
+      fetch(`https://real-state-project-server-2.onrender.com/bookings/${id}`,{
         method:"PATCH",
         headers: {
           'content-type':'application/json'

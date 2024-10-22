@@ -54,7 +54,7 @@ const Login = () => {
                 
                 const user = {email}
 
-                axios.post('https://real-state-project-server.onrender.com/jwt', user, {withCredentials: true})
+                axios.post('https://real-state-project-server-2.onrender.com/jwt', user, {withCredentials: true})
                 .then(res=> {
                     console.log(res.data)
                     if(res.data.success){

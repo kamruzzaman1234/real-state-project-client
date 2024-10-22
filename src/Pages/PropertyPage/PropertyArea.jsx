@@ -8,7 +8,7 @@ const PropertyArea = () => {
   const [visibleProperties, setVisibleProperties] = useState(8);
 
   useEffect(() => {
-    fetch('https://real-state-project-server.onrender.com/proparties')
+    fetch('https://real-state-project-server-2.onrender.com/proparties')
       .then(res => res.json())
       .then(data => {
         setProperty(data);

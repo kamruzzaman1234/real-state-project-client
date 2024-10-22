@@ -6,7 +6,7 @@ const Propartes = () => {
   const [visibleProparties, setVisibleProparties] = useState(6); // Initial number of properties to display
 
   useEffect(() => {
-    fetch("https://real-state-project-server.onrender.com/proparties")
+    fetch("https://real-state-project-server-2.onrender.com/proparties")                    
       .then((res) => res.json())
       .then((data) => {
         setProparty(data);
@@ -15,9 +15,7 @@ const Propartes = () => {
   }, []);
 
   // Function to load more properties
-  const loadMore = () => {
-    setVisibleProparties((prevVisible) => prevVisible + 6); // Show 6 more properties on each click
-  };
+  
 
   return (
     <div className="my-20">

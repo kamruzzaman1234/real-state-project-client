@@ -42,7 +42,8 @@ const router = createBrowserRouter([
       {
         path:'bookingProperty/:id',
         element:<PrivetRouter><BookingProperty></BookingProperty></PrivetRouter>,
-        loader: ({params})=> fetch(`https://real-state-project-server.onrender.com/proparties/${params.id}`)
+        loader: ({params})=> 
+          fetch(`https://real-state-project-server-2.onrender.com/proparties/${params.id}`)
       },
       {
         path:'bookings',
