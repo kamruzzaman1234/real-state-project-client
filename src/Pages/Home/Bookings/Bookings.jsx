@@ -6,7 +6,9 @@ import axios from "axios"
 const Bookings = ()=>{
     const [bookings, setBookings] = useState([])
     const {user} = useContext(AuthContext)
-    const url = `http://localhost:6010/bookings?email=${user.email}`
+    
+    const url = `https://real-state-project-server.onrender.com/bookings?email=${user.email}`
+
     useEffect(()=>{
 
 
@@ -26,7 +28,7 @@ const Bookings = ()=>{
     const handleDelete = (id)=>{
       const processed = confirm("Are You Sure you want to Delete")
      if(processed){
-      fetch(`http://localhost:6010/bookings/${id}`, {
+      fetch(`https://real-state-project-server.onrender.com/bookings/${id}`, {
           method:"DELETE",
         
       })
@@ -44,7 +46,7 @@ const Bookings = ()=>{
   }
 
     const handleConfirm = (id)=>{
-      fetch(`http://localhost:6010/bookings/${id}`,{
+      fetch(`https://real-state-project-server.onrender.com/bookings/${id}`,{
         method:"PATCH",
         headers: {
           'content-type':'application/json'

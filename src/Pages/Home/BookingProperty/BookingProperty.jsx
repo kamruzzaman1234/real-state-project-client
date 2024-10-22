@@ -24,7 +24,7 @@ const BookingProperty = ()=>{
         
         console.log(allValue)
         
-    fetch('http://localhost:6010/bookings', {
+    fetch('https://real-state-project-server.onrender.com/bookings', {
         method: "POST",
         headers: {
             'content-type': 'application/json',
