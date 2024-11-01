@@ -77,17 +77,19 @@ const BlogPage = () => {
         {/* Categories Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Categories</h2>
-          <div className="flex flex-col lg:flex-row space-x-4">
+          <div className="flex flex-col gap-3 lg:flex-row space-x-4">
             <button
               onClick={() => setSelectedCategory('All')}
-              className={`px-4 py-2 rounded-lg ${selectedCategory === 'All' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}`}>
+              className={`px-4 py-2 rounded-lg ${selectedCategory === 'All' ? 
+              'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}`}>
               All
             </button>
             {categories.map(category => (
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg ${selectedCategory === category ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}`}>
+                className={`px-4 py-2 rounded-lg ${selectedCategory === category ?
+                 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}`}>
                 {category}
               </button>
             ))}
