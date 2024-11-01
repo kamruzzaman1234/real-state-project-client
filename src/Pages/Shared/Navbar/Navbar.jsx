@@ -4,13 +4,18 @@ import { AuthContext } from "../../../../Provider/AuthProvider";
 
 const Navbar = ({bookings})=>{
   const {user, logOut} = useContext(AuthContext)
-  const handleLogOut = ()=>{
-    logOut()
-    .then(res=>{})
-    .then(error=> console.log(error.message))
-  }
+  const handleLogOut = () => {
+    logOut() 
+      .then(res => {})
+    
+      .then(data => {
+        console.log(data); 
+      })
+     
+  };
+  
     return(
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
  <div className="navbar bg-white rounded-lg px-11">
   <div className="navbar-start ">
     <div className="dropdown">

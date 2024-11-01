@@ -5,7 +5,7 @@ const BackgroundImg  =()=>{
                 `url('https://i.ibb.co.com/GQ30t2Q/pexels-falling4utah-2724749.jpg')`,
                  backgroundSize:'cover', backgroundRepeat:'no-repeat', height:'600px'}}>
                 <div className="py-[200px]">
-                    <div className="max-w-7xl mx-auto">
+                    <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
                         <div className="bg-white px-8 w-[391px]  space-y-4 flex py-16 flex-col">
                             <h3 className="font-semibold text-[18px]">Let’s Take A Tour</h3>
                             <h1 className="font-semibold text-[28px]">Search Property Smarter,

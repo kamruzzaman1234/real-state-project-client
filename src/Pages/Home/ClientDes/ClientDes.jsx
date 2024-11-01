@@ -1,10 +1,10 @@
 const ClientDes = ()=>{
     return(
         <div className="bg-gray-200 py-10">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
             <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative w-full">
-        <div className="mx-auto space-y-4 flex justify-center items-center text-center flex-col">
+        <div className="mx-8 md:mx-12 lg:mx-auto space-y-4 flex justify-center items-center text-center flex-col">
         <img src="https://i.ibb.co.com/NNNGPbz/Ellipse-81-3.png" 
                     className="w-[158px] h-[158px]" alt="" />
                     <h3 className="text-[22px] font-bold">Maria Crist</h3>
@@ -23,7 +23,7 @@ const ClientDes = ()=>{
     </div>
   </div>
   <div id="slide2" className="carousel-item relative w-full">
-  <div className="mx-auto space-y-4 flex justify-center items-center text-center flex-col">
+  <div className="mx-8 md:mx-12 lg:mx-auto space-y-4 flex justify-center items-center text-center flex-col">
   <img src="https://i.ibb.co.com/Cs139wv/Ellipse-81-1.png" 
                     className="w-[158px] h-[158px]" alt="" />
                     <h3 className="text-[22px] font-bold">Jonse Mendela</h3>
@@ -41,7 +41,7 @@ const ClientDes = ()=>{
     </div>
   </div>
   <div id="slide3" className="carousel-item relative w-full">
-  <div className="mx-auto space-y-4 flex justify-center items-center text-center flex-col">
+  <div className="mx-8 md:mx-12 lg:mx-auto space-y-4 flex justify-center items-center text-center flex-col">
   <img src="https://i.ibb.co.com/84RKmKg/Ellipse-81-4.png" 
                     className="w-[158px] h-[158px]" alt="" />
                     <h3 className="text-[22px] font-bold">Rose Rupak</h3>
@@ -58,7 +58,7 @@ const ClientDes = ()=>{
     </div>
   </div>
   <div id="slide4" className="carousel-item relative w-full">
-  <div className="mx-auto space-y-4 flex justify-center items-center text-center flex-col">
+  <div className="mx-8 md:mx-12 lg:mx-auto space-y-4 flex justify-center items-center text-center flex-col">
   <img src="https://i.ibb.co.com/Kyjy2h4/Ellipse-81-2.png" 
                     className="w-[158px] h-[158px]" alt="" />
                     <h3 className="text-[22px] font-bold">Raisu Anjon</h3>

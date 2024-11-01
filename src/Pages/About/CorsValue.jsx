@@ -43,7 +43,7 @@ const CoreValues = () => {
               <img
                 src={value.imgSrc}
                 alt={value.title}
-                className="w-20 h-20 mx-auto mb-6 rounded-full shadow-lg"
+                className="w-20 h-20 mx-8 md:mx-12 lg:mx-auto mb-6 rounded-full shadow-lg"
               />
               {/* Title */}
               <h3 className="text-2xl font-semibold text-gray-800 mb-4 text-center">

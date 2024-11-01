@@ -31,22 +31,21 @@ const AuthProvider = ({ children }) => {
             const logInEmailUser = {email: userEmail}
             setUser(currentUser);
             setLoading(false);
-            if(currentUser){
+            // if(currentUser){
+            //     axios.post('https://real-state-project-server-omega.vercel.app//jwt',
+            //      logInEmailUser, {withCredential: true})
+            //     .then(res=> {
+            //         // console.log(res.data)
+            //     })
                 
                 
-                axios.post('https://real-state-project-server.onrender.com/jwt', logInEmailUser, {withCredential: true})
-                .then(res=> {
-                    // console.log(res.data)
-                })
-                
-                
-            }else{
-                axios.post('https://real-state-project-server.onrender.com/logout',
-             logInEmailUser, {withCredentials: true})
-             .then(res=>{
-                // console.log(res.data)
-             })
-            }
+            // }else{
+            //     axios.post('https://real-state-project-server-omega.vercel.app//logout',
+            //  logInEmailUser, {withCredentials: true})
+            //  .then(res=>{
+            //     // console.log(res.data)
+            //  })
+            // }
            
         });
 

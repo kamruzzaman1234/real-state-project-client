@@ -3,21 +3,22 @@ import PropertyCard from "./PropertyCard";
 import Filters from "./Filters";
 
 const PropertyArea = () => {
-  const [proparties, setProparties] = useState([]);
+  const [propartyValue, setPropartyValue] = useState([]);
   const [filteredProperties, setFilteredProperties] = useState([]);
   const [visibleProperties, setVisibleProperties] = useState(8);
 
+
   useEffect(() => {
-    fetch('https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/proparties')
+    fetch("https://real-state-project-server-omega.vercel.app/proparties")
       .then(res => res.json())
       .then(data => {
-        setProparties(data);
+        setPropartyValue(data);
         setFilteredProperties(data); // Initially show all properties
       });
   }, []);
 
   const applyFilters = (filters) => {
-    const filtered = proparties.filter(prop => {
+    const filtered = propartyValue.filter(prop => {
       const matchesPrice = prop.price <= filters.maxPrice;
       const matchesLocation = prop.location.toLowerCase().includes(filters.location.toLowerCase());
       const matchesType = prop.type === filters.type || filters.type === 'all';
@@ -32,7 +33,7 @@ const PropertyArea = () => {
 
   return (
     <div className="mt-10 py-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[#FF5A3A]">Choose Your Property</h1>
           <p className="text-lg text-black font-semibold mt-2">

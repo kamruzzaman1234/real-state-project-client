@@ -5,7 +5,7 @@ const Features = ()=>{
         <h4 className="text-[18px] text-[#FF5A3C] font-semibold">Our Features</h4>
         <h2 className="text-[28px] text-white font-semibold">Why Choose Us ?</h2>
       </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
             <div className="bg-white py-10 px-6 flex rounded-md flex-col justify-center items-center">

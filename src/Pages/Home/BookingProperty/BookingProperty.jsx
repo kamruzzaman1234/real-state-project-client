@@ -24,7 +24,7 @@ const BookingProperty = ()=>{
         
         // console.log(allValue)
         
-    fetch('https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings', {
+    fetch('https://real-state-project-server-omega.vercel.app//bookings', {
         method: "POST",
         headers: {
             'content-type': 'application/json',
@@ -48,7 +48,7 @@ const BookingProperty = ()=>{
 
     return(
         <div className="mt-20 py-20">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
         <div className="text-center my-12">
             <h4 className="text-[18px] text-[#FF5A3C] font-semibold">Booking Now</h4>
             <h2 className="text-[28px] text-black font-semibold">Choose Your Property</h2>

@@ -9,7 +9,7 @@ const About = () => {
   return (
     <div className="mt-10 py-20">
       {/* Heading */}
-     <div className="max-w-7xl mx-auto">
+     <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
      <section className="text-center mb-10">
         <h1 className="text-4xl font-bold text-[#FF5A3A]">About Us</h1>
         <p className="text-lg text-black font-semibold mt-2">

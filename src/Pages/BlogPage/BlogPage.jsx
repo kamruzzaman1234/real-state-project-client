@@ -55,7 +55,7 @@ const BlogPage = () => {
 
   return (
     <div className="mt-10 py-20 bg-slate-200">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
 
         {/* Featured Posts Section */}
         <section className="mb-8">

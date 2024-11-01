@@ -52,10 +52,10 @@ const Register = () => {
     };
 
     return (
-        <div className="py-[150px] mt-11 max-w-7xl mx-auto" style={{ backgroundImage: `url('https://i.ibb.co.com/bbbsTtF/pexels-sibi-mathew-410029-1092063.jpg')`, backgroundRepeat: "no-repeat",
+        <div className="py-[150px] mt-11 max-w-7xl mx-8 md:mx-12 lg:mx-auto" style={{ backgroundImage: `url('https://i.ibb.co.com/bbbsTtF/pexels-sibi-mathew-410029-1092063.jpg')`, backgroundRepeat: "no-repeat",
          backgroundSize:'cover', backgroundAttachment: "fixed" }}>
             <ToastContainer></ToastContainer>
-            <div className="mx-auto border-2 border-gray-300 rounded-lg w-[414px] bg-gray-100" style={{backgroundImage:`url('')`}}>
+            <div className="mx-8 md:mx-12 lg:mx-auto border-2 border-gray-300 rounded-lg w-[414px] bg-gray-100" style={{backgroundImage:`url('')`}}>
                 <div className="flex justify-center items-center mb-10">
                     <h2 className="text-[36px] text-[#FF5A3A] pt-10 font-bold">Register</h2>
                 </div>

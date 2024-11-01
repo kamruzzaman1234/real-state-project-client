@@ -7,7 +7,7 @@ const Bookings = ()=>{
     const [bookings, setBookings] = useState([])
     const {user} = useContext(AuthContext)
     
-    const url = `https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings?email=${user.email}`
+    const url = `https://real-state-project-server-omega.vercel.app/bookings?email=${user.email}`
 
     useEffect(()=>{
 
@@ -28,7 +28,7 @@ const Bookings = ()=>{
     const handleDelete = (id)=>{
       const processed = confirm("Are You Sure you want to Delete")
      if(processed){
-      fetch(`https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings/${id}`, {
+      fetch(`https://real-state-project-server-omega.vercel.app/bookings/${id}`, {
           method:"DELETE",
         
       })
@@ -46,7 +46,7 @@ const Bookings = ()=>{
   }
 
     const handleConfirm = (id)=>{
-      fetch(`https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/bookings/${id}`,{
+      fetch(`https://real-state-project-server-omega.vercel.app/bookings/${id}`,{
         method:"PATCH",
         headers: {
           'content-type':'application/json'
@@ -68,7 +68,7 @@ const Bookings = ()=>{
     }
     return(
         <div className="mt-20 py-20">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
             <div className="text-center my-12">
             <h4 className="text-[18px] text-[#FF5A3C] font-semibold">Your Booking Property</h4>
             <h2 className="text-[28px] text-black font-semibold">Choose Your Property</h2>

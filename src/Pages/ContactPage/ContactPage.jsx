@@ -3,7 +3,7 @@ import React from 'react';
 const ContactPage = () => {
   return (
     <div className="mt-10 py-20 bg-slate-200">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-8 md:mx-12 lg:mx-auto">
         
         {/* Page Title */}
         <section className="text-center mb-12">

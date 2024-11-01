@@ -3,27 +3,23 @@ import PropartyCard from "./PropartyCard";
 
 const Propartes = () => {
  
-  const [proparties, setProparties] = useState([]);
+  const [propartyValue, setPropartyValue] = useState([]);
   const [visibleProparties, setVisibleProparties] = useState(6);
 
+  
+  useEffect(()=>{
+   try {
+     fetch("https://real-state-project-server-omega.vercel.app/proparties")
+     .then(res=> res.json())
+     .then(data=>{
+       setPropartyValue(data)
+     })
+   } catch (error) {
+    console.log(er)
+   }
+  },[])
 
-  useEffect(() => {
-    fetch("https://real-state-project-server-j1ykdx38a-kmruzzamans-projects.vercel.app/proparties")
-      .then((res) => {
-        
-        if (!res.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return res.json(); 
-      })
-      .then((data) => {
-        setProparties(data); 
-        console.log("Fetched Data:", data); 
-      })
-      .catch((error) => {
-        console.error('There was a problem with the fetch operation:', error); 
-      });
-  }, []);
+  
 
   
   const loadMore = () => {
@@ -39,13 +35,13 @@ const Propartes = () => {
       
    
       <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-4 lg:grid-cols-3">
-        {proparties.slice(0, visibleProparties).map((property) => (
+        {propartyValue.slice(0, visibleProparties).map((property) => (
           <PropartyCard key={property._id} property={property} />
         ))}
       </div>
       
       
-      {visibleProparties < proparties.length && (
+      {visibleProparties < propartyValue.length && (
         <div className="text-center mt-8">
           <button
             onClick={loadMore}

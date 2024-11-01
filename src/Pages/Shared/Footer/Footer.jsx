@@ -7,7 +7,7 @@ import { IoCallOutline } from "react-icons/io5";
 const Footer = ()=>{
     return(
         <div className="bg-[#0B2C3D]">
-            <div className="py-20 max-w-7xl mx-auto">
+            <div className="py-20 max-w-7xl mx-8 md:mx-12 lg:mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="space-y-6">   
                         <div className="flex items-center gap-6">
