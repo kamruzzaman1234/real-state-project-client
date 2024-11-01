@@ -77,7 +77,7 @@ const BlogPage = () => {
         {/* Categories Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Categories</h2>
-          <div className="flex space-x-4">
+          <div className="flex flex-col lg:flex-row space-x-4">
             <button
               onClick={() => setSelectedCategory('All')}
               className={`px-4 py-2 rounded-lg ${selectedCategory === 'All' ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-700'}`}>
@@ -94,7 +94,7 @@ const BlogPage = () => {
           </div>
         </section>
 
-        {/* Blog Posts Section */}
+        {/* Blog Posts Section */}    
         <section className="mb-8">
           <h2 className="text-2xl font-bold mb-4">Blog Posts</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
