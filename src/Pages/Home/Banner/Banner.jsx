@@ -15,9 +15,9 @@ const Banner = ()=>{
          <p className="text-[20px] lg:text-[25px] font-medium">From as low as $10 per day with limited time offer discounts.</p>
          </div>
          <div className="flex flex-col md:flex-row lg:flex-row gap-4 my-6 pt-24 lg:pt-0">
-            <Link className="px-8 text-[15px] rounded-lg font-medium py-3 hover:text-white bg-white hover:bg-[#FF5A3C]">Buy</Link>
+            {/* <Link className="px-8 text-[15px] rounded-lg font-medium py-3 hover:text-white bg-white hover:bg-[#FF5A3C]">Buy</Link>
             <Link className="px-8 text-[15px] rounded-lg font-medium py-3 hover:text-white bg-white hover:bg-[#FF5A3C]">Rent</Link>
-            <Link className="px-8 text-[15px] rounded-lg font-medium py-3 hover:text-white bg-white hover:bg-[#FF5A3C]">Cell</Link>
+            <Link className="px-8 text-[15px] rounded-lg font-medium py-3 hover:text-white bg-white hover:bg-[#FF5A3C]">Cell</Link> */}
 
          </div>
          <div className="border-2 border-white p-2 rounded-lg my-6 bg-white">
