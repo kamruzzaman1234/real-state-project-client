@@ -37,7 +37,7 @@ const BookingProperty = ()=>{
         }
     
         // Send data to the backend
-        fetch("http://localhost:6010/bookings", {
+        fetch("https://real-state-project-server-omega.vercel.app/bookings", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

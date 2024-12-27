@@ -11,7 +11,7 @@ const Bookings = () => {
         const fetchBookings = async () => {
             if (user?.email) {
                 try {
-                    const url = `http://localhost:6010/bookings?email=${user.email}`;
+                    const url = `https://real-state-project-server-omega.vercel.app/bookings?email=${user.email}`;
                     const res = await axios.get(url, {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -30,7 +30,7 @@ const Bookings = () => {
     const handleDelete = async (id) => {
         if (confirm("Are you sure you want to delete this booking?")) {
             try {
-                const response = await axios.delete(`http://localhost:6010/bookings/${id}`, {
+                const response = await axios.delete(`https://real-state-project-server-omega.vercel.app/bookings/${id}`, {
                     withCredentials: true,
                 });
                 if (response.data.deletedCount > 0) {
@@ -46,7 +46,7 @@ const Bookings = () => {
     const handleConfirm = async (id) => {
         try {
             const response = await axios.patch(
-                `http://localhost:6010/bookings/${id}`,
+                `https://real-state-project-server-omega.vercel.app/bookings/${id}`,
                 { status: "confirm" },
                 { withCredentials: true }
             );

@@ -32,7 +32,7 @@ const AuthProvider = ({ children }) => {
             setUser(currentUser);
             setLoading(false);
             // if(currentUser){
-            //     axios.post('http://localhost:6010//jwt',
+            //     axios.post('https://real-state-project-server-omega.vercel.app//jwt',
             //      logInEmailUser, {withCredential: true})
             //     .then(res=> {
             //         // console.log(res.data)
@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
                 
                 
             // }else{
-            //     axios.post('http://localhost:6010//logout',
+            //     axios.post('https://real-state-project-server-omega.vercel.app//logout',
             //  logInEmailUser, {withCredentials: true})
             //  .then(res=>{
             //     // console.log(res.data)

@@ -50,7 +50,7 @@ const Login = () => {
                 const logInUser = result.user;
                 const user = { email };
 
-                axios.post('http://localhost:6010/jwt', user, { withCredentials: true })
+                axios.post('https://real-state-project-server-omega.vercel.app/jwt', user, { withCredentials: true })
                     .then(res => {
                         if (res.data.success) {
                             toast("Login Successfully");
@@ -70,7 +70,7 @@ const Login = () => {
                 const user = result.user;
                 const userEmail = { email: user.email };
 
-                axios.post('http://localhost:6010/jwt', userEmail, { withCredentials: true })
+                axios.post('https://real-state-project-server-omega.vercel.app/jwt', userEmail, { withCredentials: true })
                     .then(res => {
                         if (res.data.success) {
                             toast("Google Sign-In Successful");

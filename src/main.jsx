@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         path:'bookingProperty/:id',
         element:<PrivetRouter><BookingProperty></BookingProperty></PrivetRouter>,
         loader: ({params})=> 
-          fetch(`http://localhost:6010/proparties/${params.id}`)
+          fetch(`https://real-state-project-server-omega.vercel.app/proparties/${params.id}`)
       },
       {
         path:'bookings',
