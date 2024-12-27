@@ -5,6 +5,7 @@ import { AuthContext } from "../../../Provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
+import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -14,64 +15,82 @@ const Login = () => {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
-    const navigate = useNavigate()
-    const location = useLocation()
+
+    const navigate = useNavigate();
+    const location = useLocation();
+
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
 
-        
         if (!email) {
             alert("Email field is required!");
             return;
         }
 
-        
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             alert("Please enter a valid email address!");
             return;
         }
 
-        
         if (!password) {
             alert("Password field is required!");
             return;
         }
 
-        
         if (rememberMe) {
             // console.log("User wants to be remembered.");
         }
 
-       
         signIn(email, password)
             .then(result => {
                 const logInUser = result.user;
-                // console.log("Successfull login",logInUser);
-                
-                const user = {email}
+                const user = { email };
 
-                axios.post('https://real-state-project-server-omega.vercel.app/jwt', user, {withCredentials: true})
-                .then(res=> {
-                    // console.log(res.data)
-                    if(res.data.success){
-                        toast("Login Successfully")
-                        navigate(location?.state ? location?.state: '/' )
-                
-                    }
-                })
+                axios.post('http://localhost:6010/jwt', user, { withCredentials: true })
+                    .then(res => {
+                        if (res.data.success) {
+                            toast("Login Successfully");
+                            navigate(location?.state ? location?.state : '/');
+                        }
+                    });
             })
             .catch(error => console.log(error.message));
     };
 
+    const handleGoogleSignIn = () => {
+        const auth = getAuth();
+        const provider = new GoogleAuthProvider();
+
+        signInWithPopup(auth, provider)
+            .then(result => {
+                const user = result.user;
+                const userEmail = { email: user.email };
+
+                axios.post('http://localhost:6010/jwt', userEmail, { withCredentials: true })
+                    .then(res => {
+                        if (res.data.success) {
+                            toast("Google Sign-In Successful");
+                            navigate(location?.state ? location?.state : '/');
+                        }
+                    });
+            })
+            .catch(error => {
+                console.error("Google Sign-In Error:", error.message);
+                toast.error("Google Sign-In Failed!");
+            });
+    };
+
     return (
-        <div className="py-[150px] mt-11 max-w-7xl mx-8 md:mx-12 lg:mx-auto" 
-        style={{ backgroundImage: `url('https://i.ibb.co.com/bbbsTtF/pexels-sibi-mathew-410029-1092063.jpg')`, 
-        backgroundRepeat: "no-repeat", backgroundSize: 'cover',
-         backgroundAttachment: "fixed" }}>
+        <div className="py-[150px] mt-11 max-w-7xl mx-8 md:mx-12 lg:mx-auto"
+            style={{
+                backgroundImage: `url('https://i.ibb.co.com/bbbsTtF/pexels-sibi-mathew-410029-1092063.jpg')`,
+                backgroundRepeat: "no-repeat", backgroundSize: 'cover',
+                backgroundAttachment: "fixed"
+            }}>
             <ToastContainer></ToastContainer>
             <div className="mx-8 md:mx-12 lg:mx-auto border-2 border-gray-300 rounded-lg w-[414px] bg-gray-100" style={{ backgroundImage: `url('')` }}>
                 <div className="flex justify-center items-center mb-10">
@@ -114,7 +133,7 @@ const Login = () => {
                         </div>
                         <div className="divider divider-neutral text-[#FF5A3A]">Or login With</div>
                         <div className="my-10">
-                            <button className="btn btn-outline w-full">
+                            <button type="button" className="btn btn-outline w-full" onClick={handleGoogleSignIn}>
                                 <FaGoogle className="text-[#4285F4] text-[18px]" />
                                 <span className="text-[18px]">Google</span>
                             </button>
@@ -127,6 +146,6 @@ const Login = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Login;

@@ -9,40 +9,65 @@ const BookingProperty = ()=>{
     const {user} = useContext(AuthContext)
     // console.log("Your user is ", user)
 
-    const handleProperty = (e)=>{
-        e.preventDefault()
-        const form = e.target 
-        const title = form.title.value
-        const email = user?.email
-        const price = form.price.value
-        const address = form.address.value 
-        const date = form.date.value 
-        const phone = form.phone.value 
-        const allValue = {
-             image, title, email, price, address, date, phone, location
+    const handleProperty = (e) => {
+        e.preventDefault();
+        const form = e.target;
+        const name = user?.displayName || "Anonymous";
+        const email = user?.email || "No Email Provided";
+        const price = form.price.value;
+        const address = form.address.value;
+        const date = form.date.value;
+        const phone = form.phone.value;
+    
+        const bookingDetails = {
+            image,
+            name,
+            email,
+            price,
+            address,
+            date,
+            phone,
+            location,
+        };
+    
+        // Check if all fields are filled
+        if (!address || !date || !phone) {
+            alert("Please fill out all required fields.");
+            return;
         }
+    
+        // Send data to the backend
+        fetch("http://localhost:6010/bookings", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(bookingDetails),
+        })
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error("Failed to book property");
+                }
+                return res.json();
+            })
+            .then((data) => {
+                if (data.success) {
+                    alert("Booking Successful");
+                    form.reset();
+                } else {
+                    alert("Booking failed. Please try again.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error booking property:", error);
+                alert("Something went wrong. Please try again.");
+            });
         
-        // console.log(allValue)
-        
-    fetch('https://real-state-project-server-omega.vercel.app//bookings', {
-        method: "POST",
-        headers: {
-            'content-type': 'application/json',
-        },
-        body: JSON.stringify(allValue)
-    })
-    .then(res=> res.json())
-    .then(data=>{
-        // console.log(data)
-        if(data.insertedId){
-            alert("Booking Successfully")
-            form.reset()
-            // setBookings([...bookings, allValue])
-        }
-    })
-   
-      
-    }
+            
+         
+           
+    };
+    
 
     
 

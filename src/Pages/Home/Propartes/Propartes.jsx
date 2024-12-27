@@ -9,7 +9,7 @@ const Propartes = () => {
   
   useEffect(()=>{
    try {
-     fetch("https://real-state-project-server-omega.vercel.app/proparties")
+     fetch("http://localhost:6010/proparties")
      .then(res=> res.json())
      .then(data=>{
        setPropartyValue(data)
